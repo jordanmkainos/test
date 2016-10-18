@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <!--Send the screen details straight away-->
+         <script>
+
+            //get the screen height and width
+            height = screen.height;
+            width = screen.width;
+
+            //Retina displays require additonal logic to determine true resolution
+            isRetina = function(){
+                var mediaQuery = "(-webkit-min-device-pixel-ratio: 1.5),\
+                    (min--moz-device-pixel-ratio: 1.5),\
+                    (-o-min-device-pixel-ratio: 3/2),\
+                    (min-resolution: 1.5dppx)";
+                if (window.devicePixelRatio > 1)
+                    return true;
+                if (window.matchMedia && window.matchMedia(mediaQuery).matches)
+                    return true;
+                return false;
+            }();
+
+            //which essentially leads to a basic x2 of what we orignally detect
+            if (isRetina) {
+                height = height * 2;
+                width = width * 2;
+            }
+            
+            //tells the service worker whatsize the screen is
+            navigator.serviceWorker.controller.postMessage([false,height, width]);
+            
+         </script>
+         <style>
+            img.responsive-img, video.responsive-video {
+                max-width: 100% !important;
+                height: 70% !important;
+            }
+         </style>
+         <link rel="stylesheet" href="lib/materialize.min.css">
+         <script src="lib/jquery.js"></script>   
+         <script src="lib/materialize.min.js"></script>    
+    </head>   
+    <body>
+        <div class="">
+            <div class="row">
+                <h1 class="center">Progressive SW Image Swap</h1>
+                <div class="col s4 center offset-s1">
+                    <img class="responsive-img" src="images/watch.jpg">
+                    <h3 id="ImageAHeader">Jpeg Image</h3>
+                </div>
+                <p class= "col s2"></p>
+                <div class="col s4 offset s1 center">
+                    <img class="responsive-img" src="images/watch.png">
+                    <h3 id="ImageBHeader">Png Image</h3>
+                </div>
+                <br>
+                <div class="row">
+                    <a id="stateA" class="waves-effect waves-light btn center offset-s1 col s4">Click for webP swap</a>
+                    <p class= "col s2"></p>
+                    <a id="stateB" class="waves-effect waves-light btn offset s1 center col s4">Click for default image formats</a>
+                </div>
+            </div>
+        </div>
+        <script>
+
+        //register the service worker
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/sw.js").then(function(registration) {
+                console.log("Service Worker registered");
+            }).catch(function(err) {
+                console.log("Trouble loading the Service Worker: ", err);
+            });
+        }
+
+        //handles input for selection of image swap activation
+        document.getElementById('stateA').addEventListener('click', function() { 
+            send(true);
+        });
+        document.getElementById('stateB').addEventListener('click', function() {
+            send(false);
+        });
+
+        //tells the service worker whether it should show WebP or not
+        function send(msg){
+
+            navigator.serviceWorker.controller.postMessage([true,msg]);
+
+            //refresh now
+            window.location.reload();
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+Server could return ticket number (ms) to delay real request and control load into recently active server

@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="lib/materialize.min.css">
+    <link href="lib/fonts.css" rel="stylesheet">
+    <script src="lib/jquery.js"></script>
+    <!--<script src="lib/materialize.min.js"></script>-->
+</head>
+
+<body>
+    <div id="content" class="container">
+        <div class="row">
+            <h1 class="center col s12">SW Server Load Balancer</h1>
+        </div>
+        <div class="row">
+            <p class="col s3"></p>
+            <button id="getFile" style="height: 10%;" class="col s6 btn waves-effect waves-light" ><h4>get file from the server</h4></button>
+            <p class="col s3"></p>
+        </div>
+        <br>
+    </div>
+    <script>
+
+        //registers the service worker on page load
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/sw.js").then(function(registration) {
+                console.log("Service Worker registered");
+            }).catch(function(err) {
+                console.log("Trouble loading the Service Worker: ", err);
+            });
+        }
+
+        //handle submission of the click event
+        document.getElementById("getFile").addEventListener("click", function (event) {
+            //event.preventDefault();
+            fetch("dummyRequests/originalRequest.txt?" + new Date());
+        });
+
+        // Handler for messages coming from the service worker
+        navigator.serviceWorker.addEventListener('message', function(event){
+            
+            var div = document.getElementById('content');
+            div.innerHTML = div.innerHTML + event.data;
+        });
+    </script>
+</body>
+
+</html>

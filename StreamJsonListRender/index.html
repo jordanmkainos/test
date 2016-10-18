@@ -1,0 +1,31 @@
+<html> 
+    <head>
+        <link rel="stylesheet" href="lib/materialize.min.css">
+        <script src="lib/jquery.js"></script>   
+        <script src="lib/materialize.min.js"></script>    
+    </head> 
+    <body>
+        <div id="container">
+            <div class="row">
+                <button id="getData" style="height: 10%;" class="center col s12 btn waves-effect waves-light" ><h4>Stream Json List</h4></button>
+            </div>
+            <div class="row">
+            </div>
+            <div class="row">
+                <h4 class="center">This demo will use streaming to incrementally render Json as it downloads</h4>
+            </div>
+        <div>
+        <script>
+            // Register service worker
+            navigator.serviceWorker.register('sw.js', {
+                scope: './'
+            });
+
+            //handle submission of the click event
+             document.getElementById("getData").addEventListener("click", function (event) {
+                //refresh now
+                window.location.reload();           
+             });
+        </script>
+    </body>
+</html>

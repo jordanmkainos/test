@@ -96,8 +96,7 @@ if ("serviceWorker" in navigator) {
 # Examples Built With #
 ---
 * Materialize 
-* JQuery
-* JavaScript
+* JavaScript (JQuery)
 * HTML
 * CSS
 

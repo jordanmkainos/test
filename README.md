@@ -2,7 +2,17 @@
 
 # Next Generation Web Technologies #
 
-The goal of this repository is to give an overview of the benefits of applying modern web techniques such as service worker and streaming to websites. To achieve this a series of isolated use cases have been developed which highlight the effectiveness of leveraging modern browser technologies in particular scenarios with an emphasis on web page performance and improving the user experience. 
+A key role of the Applied Innovation team at Kainos is the investigation of cutting edge technologies, with the goal of evaluating the business value for current or future projects. In the past the team have utilised modern browser based functionality with a focus on creating offline web experiences that can compete with native applications like those found on iOS or Android operating systems. This line of research has proven very successful and the underlying technologies are the basis of the research presented in this repository with a new perspective that targets performance and the user experience. To showcase this a series of use cases have been devised which highlight the advantages of applying modern web techniques to real world problems, more on these later.
+
+
+So what are these mysterious technologies? 
+
+Service Worker
+
+
+Web Streams
+
+
 
 Intro
 - talk about AI looking at sw for offline web

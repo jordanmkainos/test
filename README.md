@@ -50,7 +50,11 @@ An example process of running a use case on a Mac using the suggested web server
 ![alt text](terminal.gif)
 
 
-Now you can go to a compatible (See FAQ section) browser and run the use case on the local host port your specefied.
+Now you can go to a compatible browser (See FAQ section) and run the use case on the local host port you specified.
+
+### NOTE ###
+When a service worker first visits a page it will need to install before it can take control of the website, don't worry it will be ready to go for all subsequent visits.
+
 ![alt text](localHost.gif)
 
 

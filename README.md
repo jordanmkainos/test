@@ -15,7 +15,7 @@ So what are these mysterious technologies?
 **Web Streams:** When you think of streaming the first thing that comes to mind might be services such as Youtube which play video content as the data downloads. Conceptually this is essentially the same idea and browsers have supported streaming out of the box since the stone age of the internet. I am sure you have experienced rage inducing tortoise like internet speeds like this before:
 
 
-add gif showing slow images loading
+![alt text](tortoise.gif)
 
 
 This is essentially streaming, however it is only recently (2016!) that the API has been exposed to developers and allows us to do a bunch of cool things which will be examined later.

@@ -77,7 +77,15 @@ if ("serviceWorker" in navigator) {
 # Use cases #
 ---
 
-- go through each in turn
+** ImageReverseProxy **
+
+** ServerDownLoadBalancerSW **
+
+** KeyWordSearchUseCase **
+
+** StreamHeaderFooter **
+
+** StreamJsonListRender **
 
 # FAQ #
 ---

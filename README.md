@@ -64,7 +64,8 @@ you might be thinking, how do I install a service worker anyway? Don't worry I h
 
 ```
 #!js
-if ("serviceWorker" in navigator) {                   navigator.serviceWorker.register("/sw.js").then(function(registration) {
+if ("serviceWorker" in navigator) {  
+                 navigator.serviceWorker.register("/sw.js").then(function(registration) {
     console.log("Service Worker registered");
 }).catch(function(err) {
     console.log("Trouble loading the Service Worker: ", err);

@@ -2,7 +2,7 @@
 
 # Next Generation Web Technologies #
 
-
+The goal of this repository is to give an overview of the benefits of applying modern web techniques such as service worker and streaming to websites. To achieve this a series of isolated use cases have been developed which highlight the effectiveness of leveraging modern browser technologies in particular scenarios with an emphasis on web page performance and improving the user experience. 
 
 Intro
 - talk about AI looking at sw for offline web

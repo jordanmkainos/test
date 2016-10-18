@@ -89,9 +89,9 @@ if ("serviceWorker" in navigator) {
 
 * Chrome - 52
 * Opera - 39
-* Firefox - In Dev
-* Safari - In Dev
-* Edge/IE - ?
+* Firefox - X
+* Safari - X
+* Edge/IE - X
 
 # Examples Built With #
 ---

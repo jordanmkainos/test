@@ -72,6 +72,6 @@ A: TODO
 * CSS
 
 # Contact Information #
-appliedinnovation@kainos.com
+* appliedinnovation@kainos.com
 
-J.McDonald@kainos.com
+* J.McDonald@kainos.com

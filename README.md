@@ -1,31 +1,27 @@
 ![alt text](https://cdn3.kainos.com/wp-content/themes/kainos.com/images/Kainos-Logo.png?dd6334 "Kainos Logo")
 
-# README #
+# Next Generation Web Technologies #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Intro
+- talk about AI looking at sw for offline web
+- what made us look at performance scenario
+- Goal of the repo
+- streaming + SW
 
-### What is this repository for? ###
+### Setup ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+- each folder is a specific use case
+- how to run
+- gifs showing each step
 
-### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+### Use cases ###
 
-### Contribution guidelines ###
+- intro
+- go through each in turn
 
-* Writing tests
-* Code review
-* Other guidelines
+### FAQ ###
 
-### Who do I talk to? ###
+### Built with ###
+- materialise etc
 
-* Repo owner or admin
-* Other community or team contact

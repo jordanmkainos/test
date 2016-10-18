@@ -47,7 +47,7 @@ Each use case is encapsulated within its own folder, see below for the list of s
 
 An example process of running a use case on a Mac using the suggested web server is show below.
 
-![alt text](tortoise.gif)
+![alt text](localHost.gif)
 
 
 ### Use cases ###

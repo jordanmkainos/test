@@ -36,7 +36,7 @@ You will need a local web server which will be used to deploy the example use ca
 ** Windows: ** [Apache Tomcat](http://tomcat.apache.org)
 
 
-# How To Run #
+### How To Run ###
 Each use case is encapsulated within its own folder, see below for the list of scenarios that are available to run.
 
 * ImageReverseProxy

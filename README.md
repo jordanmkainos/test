@@ -97,6 +97,8 @@ This demonstration showcases the service workers ability to not only intercept r
 
 ***NOTE - ***You can simulate this behaviour by loading the local web page, turning off the local server and then selecting the button (which in the background tries to fetch a text file) which should activate the polling mechanism. To simulate the theoritical server coming back online, restart the local web server which the service worker should detect and then will make the original persisted request (hooray for service worker!).
 
+![alt text](serverPoll.gif)
+
 ** KeyWordSearchUseCase **
 
 ** StreamHeaderFooter **

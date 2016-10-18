@@ -2,6 +2,8 @@
 
 # Next Generation Web Technologies #
 
+
+
 Intro
 - talk about AI looking at sw for offline web
 - what made us look at performance scenario
@@ -21,6 +23,9 @@ Intro
 - go through each in turn
 
 ### FAQ ###
+Q: What browsers are supported?
+
+A: TODO
 
 ### Examples Built With ###
 * Materialize 
@@ -28,3 +33,5 @@ Intro
 * JavaScript
 * HTML
 * CSS
+
+### Contact Information ###

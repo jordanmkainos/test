@@ -65,10 +65,10 @@ you might be thinking, how do I install a service worker anyway? Don't worry I h
 ```
 #!js
 if ("serviceWorker" in navigator) {  
-                 navigator.serviceWorker.register("/sw.js").then(function(registration) {
-    console.log("Service Worker registered");
+         navigator.serviceWorker.register("/sw.js").then(function(registration) {
+         console.log("Service Worker registered");
 }).catch(function(err) {
-    console.log("Trouble loading the Service Worker: ", err);
+         console.log("Trouble loading the Service Worker: ", err);
 });
 }
 ```
@@ -77,14 +77,13 @@ if ("serviceWorker" in navigator) {
 # Use cases #
 ---
 
-- intro
 - go through each in turn
 
 # FAQ #
 ---
 Q: What browsers are supported?
 
-A: TODO
+A: For scenario ImageReverseProxy & ServerDownLoadBalancerSW check out [THIS](http://caniuse.com/#search=service%20worker) website for information on the latest service worker support.
 
 # Examples Built With #
 ---

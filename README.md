@@ -55,6 +55,21 @@ Now you can go to a compatible browser (See FAQ section) and run the use case on
 ### NOTE ###
 When a service worker first visits a page it will need to install before it can take control of the website, don't worry it will be ready to go for all subsequent visits.
 
+you might be thinking, how do I install a service worker anyway? Don't worry I have you covered, just insert this small script into your html page and you are ready to go!
+
+
+```
+#!js
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/sw.js").then(function(registration) {
+                console.log("Service Worker registered");
+            }).catch(function(err) {
+                console.log("Trouble loading the Service Worker: ", err);
+            });
+        }
+```
+
+
 ![alt text](localHost.gif)
 
 

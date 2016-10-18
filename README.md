@@ -50,6 +50,7 @@ An example process of running a use case on a Mac using the suggested web server
 ![alt text](terminal.gif)
 
 
+Now you can go to a compatible (See FAQ section) browser and run the use case on the local host port your specefied.
 ![alt text](localHost.gif)
 
 

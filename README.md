@@ -65,11 +65,13 @@ When a service worker first visits a page it will need to install before it can 
 - go through each in turn
 
 # FAQ #
+---
 Q: What browsers are supported?
 
 A: TODO
 
 # Examples Built With #
+---
 * Materialize 
 * JQuery
 * JavaScript
@@ -77,6 +79,7 @@ A: TODO
 * CSS
 
 # Contact Information #
+---
 * appliedinnovation@kainos.com
 
 * J.McDonald@kainos.com

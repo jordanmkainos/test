@@ -1,3 +1,5 @@
+![alt text](https://cdn3.kainos.com/wp-content/themes/kainos.com/images/Kainos-Logo.png?dd6334 "Kainos Logo")
+
 # README #
 
 This README would normally document whatever steps are necessary to get your application up and running.

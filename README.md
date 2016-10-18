@@ -85,7 +85,7 @@ The purpose of this scenario is to highlight how a service worker can be utilise
 * Detect if the browser supports a more efficient compression algorithm such as [WebP](https://developers.google.com/speed/webp/docs/compression) and manipulates the URL to request this format versus the standard Jpeg and PNG images that dominant the web. In supported browsers this will lead to an improved performance in terms of page load and in content driven websites this could be valuable. 
 * Detects the resolution of the client device and serve an image quality that is most appropriate for user. This boils down to either showing a high/low resolution image depending if the client device is within a certain threshold. Again this is a performance focused layer of functionality, since high resolution images are only served if appropriate which will benefit older devices in particular which have satisfactory fidelity if the images are lower resolution.
 
-![alt text](reverseProxy)
+![alt text](reverseProxy.gif)
 
 ** ServerDownLoadBalancerSW **
 

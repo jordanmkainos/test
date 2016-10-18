@@ -80,6 +80,7 @@ if ("serviceWorker" in navigator) {
 ---
 
 ** ImageReverseProxy **
+
 The purpose of this scenario is to highlight how a service worker can be utilised to manage the serving of images to the user from a performance standpoint. This showcases the ability of the service worker to act as a proxy which is decoupled from the web page and network, so far we have devised two sub tasks.
 
 * Detect if the browser supports a more efficient compression algorithm such as [WebP](https://developers.google.com/speed/webp/docs/compression) and manipulates the URL to request this format versus the standard Jpeg and PNG images that dominant the web. In supported browsers this will lead to an improved performance in terms of page load and in content driven websites this could be valuable. 
@@ -93,6 +94,7 @@ The purpose of this scenario is to highlight how a service worker can be utilise
 ![alt text](reverseProxy.gif)
 
 ** ServerDownLoadBalancerSW **
+
 This demonstration showcases the service workers ability to not only intercept requests, but persist requests independent of the state of the webpage or server which hosts the network resources. 
 
 

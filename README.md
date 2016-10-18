@@ -23,15 +23,17 @@ So what are these mysterious technologies?
 This is essentially streaming, however it is only recently (2016!) that the API has been exposed to developers and allows us to do a bunch of cool things which will be examined later.
 
 
-### Setup ###
+# Setup #
 
 ---
 
-# Prerequesities #
+### Prerequesities ###
 
 You will need a local web server which will be used to deploy the example use cases:
 
-** Mac: ** [EXAMPLE HERE](http://www.andyjamesdavies.com/blog/javascript/simple-http-server-on-mac-os-x-in-seconds)
+** Mac: ** [HOW TO](http://www.andyjamesdavies.com/blog/javascript/simple-http-server-on-mac-os-x-in-seconds)
+
+** Windows: ** [Apache Tomcat](http://tomcat.apache.org)
 
 
 # How To Run #

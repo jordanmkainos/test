@@ -31,21 +31,21 @@ This is essentially streaming, however it is only recently (2016!) that the API 
 
 You will need a local web server which will be used to deploy the example use cases:
 
-** Mac: **
+** Mac: ** [EXAMPLE HERE](http://www.andyjamesdavies.com/blog/javascript/simple-http-server-on-mac-os-x-in-seconds)
 
-** Windows: ** 
 
 # How To Run #
 Each use case is encapsulated within its own folder, see below for the list of scenarios that are available to run.
+
 * ImageReverseProxy
 * ServerDownLoadBalancerSW
 * KeyWordSearchUseCase
 * StreamHeaderFooter
 * StreamJsonListRender
 
-- each folder is a specific use case
-- how to run
-- gifs showing each step
+An example process of running a use case on a Mac using the suggested web server is show below.
+
+Add gif here of process
 
 
 ### Use cases ###

@@ -31,7 +31,7 @@ This is essentially streaming, however it is only recently (2016!) that the API 
 
 You will need a local web server which will be used to deploy the example use cases:
 
-** Mac: ** [HOW TO](http://www.andyjamesdavies.com/blog/javascript/simple-http-server-on-mac-os-x-in-seconds)
+** Mac: ** [How To](http://www.andyjamesdavies.com/blog/javascript/simple-http-server-on-mac-os-x-in-seconds)
 
 ** Windows: ** [Apache Tomcat](http://tomcat.apache.org)
 

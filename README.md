@@ -23,10 +23,6 @@ So what are these mysterious technologies?
 This is essentially streaming, however it is only recently (2016!) that the API has been exposed to developers and allows us to do a bunch of cool things which will be examined later.
 
 
-
-Intro
-- streaming + SW
-
 ### Setup ###
 
 - each folder is a specific use case

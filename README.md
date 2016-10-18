@@ -108,6 +108,10 @@ if ("serviceWorker" in navigator) {
 * HTML
 * CSS
 
+# The Future #
+---
+A blog investigating each of these use cases, with detailed performance metrics and exploration into the various benefits associated with each.
+
 # Contact Information #
 ---
 * appliedinnovation@kainos.com

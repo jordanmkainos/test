@@ -110,7 +110,7 @@ if ("serviceWorker" in navigator) {
 
 # The Future #
 ---
-A blog investigating each of these use cases, with detailed performance metrics and exploration into the various benefits associated with each.
+Publication of a blog investigating each of the five use cases presented here, with detailed performance metrics and exploration into the various benefits associated with scenario.
 
 # Contact Information #
 ---

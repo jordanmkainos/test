@@ -53,21 +53,24 @@ An example process of running a use case on a Mac using the suggested web server
 ![alt text](localHost.gif)
 
 
-### Use cases ###
+# Use cases #
+---
 
 - intro
 - go through each in turn
 
-### FAQ ###
+# FAQ #
 Q: What browsers are supported?
 
 A: TODO
 
-### Examples Built With ###
+# Examples Built With #
 * Materialize 
 * JQuery
 * JavaScript
 * HTML
 * CSS
 
-### Contact Information ###
+# Contact Information #
+appliedinnovation@kainos.com
+J.McDonald@kainos.com

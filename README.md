@@ -81,11 +81,12 @@ if ("serviceWorker" in navigator) {
 
 # FAQ #
 ---
-Q: What browsers are supported?
+**Q:** What browsers are supported?
 
-A: For scenario ImageReverseProxy & ServerDownLoadBalancerSW check out [THIS](http://caniuse.com/#search=service%20worker) website for information on the latest service worker support.
+**A:** For scenario ImageReverseProxy & ServerDownLoadBalancerSW check out [THIS](http://caniuse.com/#search=service%20worker) website for information on the latest service worker support.
 
-B: For scenarios KeyWordSearchUseCase, StreamHeaderFooter & StreamJsonListRender (which all use streaming + service worker)
+**B:** For scenarios KeyWordSearchUseCase, StreamHeaderFooter & StreamJsonListRender (which all use streaming + service worker)
+
 * Chrome - 52
 * Opera - 39
 * Firefox - In Dev

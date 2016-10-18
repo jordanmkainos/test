@@ -25,6 +25,24 @@ This is essentially streaming, however it is only recently (2016!) that the API 
 
 ### Setup ###
 
+---
+
+# Prerequesities #
+
+You will need a local web server which will be used to deploy the example use cases:
+
+** Mac: **
+
+** Windows: ** 
+
+# How To Run #
+Each use case is encapsulated within its own folder, see below for the list of scenarios that are available to run.
+* ImageReverseProxy
+* ServerDownLoadBalancerSW
+* KeyWordSearchUseCase
+* StreamHeaderFooter
+* StreamJsonListRender
+
 - each folder is a specific use case
 - how to run
 - gifs showing each step

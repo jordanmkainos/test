@@ -118,6 +118,8 @@ The purpose of this scenario is to highlight how a service worker can be utilise
 
 ## ##
 
+An example is shown, can you find the mouse?
+
 ![alt text](reverseProxy.gif)
 
 ## ##

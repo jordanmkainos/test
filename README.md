@@ -96,6 +96,7 @@ talk about SW deletion here
 
 ** ImageReverseProxy **
 
+
 The purpose of this scenario is to highlight how a service worker can be utilised to manage the serving of images to the user from a performance standpoint. This showcases the ability of the service worker to act as a proxy which is decoupled from the web page and network, so far we have devised two sub tasks.
 
 * Detect if the browser supports a more efficient compression algorithm such as [WebP](https://developers.google.com/speed/webp/docs/compression) and manipulates the URL to request this format versus the standard Jpeg and PNG images that dominant the web. In supported browsers this will lead to an improved performance in terms of page load and in content driven websites this could be valuable. 
@@ -104,7 +105,7 @@ The purpose of this scenario is to highlight how a service worker can be utilise
 
 * Detects the resolution of the client device and serve an image quality that is most appropriate for user. This boils down to either showing a high/low resolution image depending if the client device is within a certain threshold. Again this is a performance focused layer of functionality, since high resolution images are only served if appropriate which will benefit older devices in particular which have satisfactory fidelity if the images are lower resolution. 
 
-***NOTE - *** To test this functionality manually change the screen resolution so that the height is below the 800px threshold.
+***Note - *** To test this functionality manually change the screen resolution so that the height is below the 800px threshold.
 
 ## ##
 
@@ -143,6 +144,7 @@ Typically on content driven websites there will be elements of the page that are
 
 *** Note - ***This example should be hosted on port '8001' as the location of the cached assets need to be specified explicitly within the service worker. Alternatively you can edit the service worker code directly to utilise a port number of your own choosing, in the example code below it is as simple as modifying the url string.
 
+## ##
 
 ```
 #!js
@@ -151,6 +153,8 @@ const startFetch = caches.match('http://localhost:8002/html/header.html');
 const contentFetch = fetch("html/content.html").catch(() => new Response("Failed"));      
 const endFetch = caches.match('http://localhost:8002/html/footer.html');
 ```
+
+## ##
 
 *** Note - *** To see the main benefit of the example you should throttle the connection speed using browser developer tools which will showcase the instant first render due to the cached header. In the example below I am using a GPRS connection from within Google Chrome developer tools.
 
@@ -163,6 +167,7 @@ const endFetch = caches.match('http://localhost:8002/html/footer.html');
 ** StreamJsonListRender **
 In web applications a typical use case involves the rendering of lists of data to the user, this typically involves downloading the entire file holding the data (XML/JSON etc) and then using Javascript to handle the HTML manipulation. However using streams we can download, process and render the data as the service worker receives it using streams. This involves adjusting the structure of the JSON from the server so that each element can be parsed independently, see the example below:
 
+## ##
 
 ```
 #!json
@@ -173,6 +178,8 @@ In web applications a typical use case involves the rendering of lists of data t
 {"id":4,"first_name":"Bruce","last_name":"Cox","email":"bcox3@wikispaces.com"}
 {"id":5,"first_name":"Carol","last_name":"Simmons","email":"csimmons4@trellian.com"}
 ```
+
+## ##
 
 ***Note - ***You should know the drill by now, when you run the demo a splash page should appear (to allow the service worker to install) and clicking on the button should showcase the list streaming. To fully appreciate the impact of streaming a throttled connection should be used from with the browser developer tools. You will see the browser rendering the JSON as it receives it, the power of this functionality will be most evident when larger JSON files are being downloaded, this is a blocker streaming lets us bypass!
 

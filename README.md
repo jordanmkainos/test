@@ -107,6 +107,8 @@ One of the key benefits of streaming is the ability to download a resource in ch
 
 *** NOTE - ***This example is setup to search the HTML spec for the keyword 'service worker', as it searches the html is rendered to the screen until the keyword is discovered. In addition to this if you open the dev tools console you can see output showing the accumulation of bytes being downloaded as the search continues.
 
+![alt text](search.gif)
+
 ** StreamHeaderFooter **
 
 ** StreamJsonListRender **

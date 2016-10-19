@@ -124,7 +124,7 @@ const contentFetch = fetch("html/content.html").catch(() => new Response("Failed
 const endFetch = caches.match('http://localhost:8002/html/footer.html');
 ```
 
-
+*** NOTE - *** To see the main benefit of the example you should throttle the connection speed using browser developer tools which will showcase the instant first render due to the cached header. 
 
 ** StreamJsonListRender **
 
@@ -141,6 +141,10 @@ const endFetch = caches.match('http://localhost:8002/html/footer.html');
 * Firefox - X
 * Safari - X
 * Edge/IE - X
+
+**Q:** What if I want to run the examples on the same port and I already have a old service worker installed?
+
+**A:** talk about deleting sw and refreshing
 
 # Examples Built With #
 ---

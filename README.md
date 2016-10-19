@@ -224,7 +224,7 @@ In web applications a typical use case involves the rendering of lists of data t
 
 # **The Future** #
 ---
-Publication of a blog investigating each of the five use cases presented here, with detailed performance metrics and exploration into the various benefits associated with scenario.
+Publication of a blog investigating each of the five use cases presented here, with detailed performance metrics and exploration into the various benefits associated with each scenario.
 
 # **Contact Information** #
 ---

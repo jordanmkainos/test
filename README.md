@@ -1,6 +1,6 @@
 ![alt text](https://cdn3.kainos.com/wp-content/themes/kainos.com/images/Kainos-Logo.png?dd6334 "Kainos Logo")
 
-# Next Generation Web Technologies #
+#** Next Generation Web Technologies **#
 
 ---
 
@@ -31,7 +31,7 @@ So what are these mysterious technologies?
 This is essentially streaming, however it is only recently (2016!) that the API has been exposed to developers and allows us to do a bunch of cool things which will be examined later.
 
 
-# Setup #
+# **Setup **#
 
 ---
 
@@ -100,7 +100,7 @@ While running each of these demos locally, the service worker will bind itself t
 ## ##
 
 
-# Use cases #
+# **Use cases** #
 ---
 
 ## ImageReverseProxy ##
@@ -201,7 +201,7 @@ In web applications a typical use case involves the rendering of lists of data t
 
 ## ##
 
-# FAQ #
+# **FAQ** #
 ---
 **Q:** What browsers are supported?
 
@@ -215,18 +215,18 @@ In web applications a typical use case involves the rendering of lists of data t
 * Safari - X
 * Edge/IE - X
 
-# Examples Built With #
+# **Examples Built With** #
 ---
 * Materialize 
 * JavaScript (JQuery)
 * HTML
 * CSS
 
-# The Future #
+# **The Future** #
 ---
 Publication of a blog investigating each of the five use cases presented here, with detailed performance metrics and exploration into the various benefits associated with scenario.
 
-# Contact Information #
+# **Contact Information** #
 ---
 * appliedinnovation@kainos.com
 

@@ -88,7 +88,10 @@ if ("serviceWorker" in navigator) {
 ```
 
 ### Note ###
-talk about SW deletion here
+While running each of these demos locally, the service worker will bind itself to the url (which includes the localhost port) so if you want to run each demo correctly you will have to either:
+
+* Run each demo on a different port number
+* Unregister the old service worker when you are finished with it (which allows installation of a new service worker) - a gif has been included showing the process of unregistering a service worker (in chrome developer tools)
 
 
 # Use cases #

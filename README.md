@@ -103,7 +103,7 @@ While running each of these demos locally, the service worker will bind itself t
 # Use cases #
 ---
 
-** ImageReverseProxy **
+## ImageReverseProxy ##
 
 
 The purpose of this scenario is to highlight how a service worker can be utilised to manage the serving of images to the user from a performance standpoint. This showcases the ability of the service worker to act as a proxy which is decoupled from the web page and network, so far we have devised two sub tasks.
@@ -124,7 +124,7 @@ An example is shown, can you find the mouse?
 
 ## ##
 
-** ServerDownLoadBalancerSW **
+## ServerDownLoadBalancerSW ##
 
 This demonstration showcases the service workers ability to not only intercept requests, but persist requests independent of the state of the webpage or server which hosts the network resources. 
 
@@ -137,7 +137,7 @@ This demonstration showcases the service workers ability to not only intercept r
 
 ## ##
 
-** KeyWordSearchUseCase **
+## KeyWordSearchUseCase ##
 
 One of the key benefits of streaming is the ability to download a resource in chunks, each chunk can the be processed as it arrives versus downloading the entire resource first. Consider a scenario where the goal is to determine if a keyword is present within a (10 megabyte) text file hosted on the server, if that keyword is found early (say 1mb downloaded) then the stream which is handling the download can close. This has huge performance implications by saving the user time (not waiting for the whole file) and memory to store the file, in addition to this as each chunk search is complete it can be be stored or discarded.
 
@@ -149,7 +149,7 @@ One of the key benefits of streaming is the ability to download a resource in ch
 
 ## ##
 
-** StreamHeaderFooter **
+## StreamHeaderFooter ##
 
 Typically on content driven websites there will be elements of the page that are consistently displayed through the users stay on the site, these are normally encapsulated in a header and footer. When the html is rendered from the server that means the header/footer is downloaded fresh each time, this does not make sense in terms of performance due to the impact on load time. However using streams we can cache the header and footer and then each time the user navigates to a new page form a unified stream of the header -> network body content -> and the footer. This will yield and almost instant first render and reduce the overall load time of each webpage on the site, over the course of a users visit this could prove valuable especially on slower connections.
 
@@ -176,7 +176,7 @@ const endFetch = caches.match('http://localhost:8002/html/footer.html');
 
 ## ##
 
-** StreamJsonListRender **
+## StreamJsonListRender ##
 In web applications a typical use case involves the rendering of lists of data to the user, this typically involves downloading the entire file holding the data (XML/JSON etc) and then using Javascript to handle the HTML manipulation. However using streams we can download, process and render the data as the service worker receives it using streams. This involves adjusting the structure of the JSON from the server so that each element can be parsed independently, see the example below:
 
 ## ##

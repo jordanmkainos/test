@@ -108,11 +108,11 @@ While running each of these demos locally, the service worker will bind itself t
 
 The purpose of this scenario is to highlight how a service worker can be utilised to manage the serving of images to the user from a performance standpoint. This showcases the ability of the service worker to act as a proxy which is decoupled from the web page and network, so far we have devised two sub tasks.
 
-* Detect if the browser supports a more efficient compression algorithm such as [WebP](https://developers.google.com/speed/webp/docs/compression) and manipulates the URL to request this format versus the standard Jpeg and PNG images that dominant the web. In supported browsers this will lead to an improved performance in terms of page load and in content driven websites this could be valuable. 
+* 1) Detect if the browser supports a more efficient compression algorithm such as [WebP](https://developers.google.com/speed/webp/docs/compression) and manipulates the URL to request this format versus the standard Jpeg and PNG images that dominant the web. In supported browsers this will lead to an improved performance in terms of page load and in content driven websites this could be valuable. 
 
 ***Note - *** To test this functionality throttle the network connection using dev tools and toggle between the two options presented paying close attention to the load time for each state.
 
-* Detects the resolution of the client device and serve an image quality that is most appropriate for user. This boils down to either showing a high/low resolution image depending if the client device is within a certain threshold. Again this is a performance focused layer of functionality, since high resolution images are only served if appropriate which will benefit older devices in particular which have satisfactory fidelity if the images are lower resolution. 
+* 2) Detects the resolution of the client device and serve an image quality that is most appropriate for user. This boils down to either showing a high/low resolution image depending if the client device is within a certain threshold. Again this is a performance focused layer of functionality, since high resolution images are only served if appropriate which will benefit older devices in particular which have satisfactory fidelity if the images are lower resolution. 
 
 ***Note - *** To test this functionality manually change the screen resolution so that the height is below the 800px threshold.
 

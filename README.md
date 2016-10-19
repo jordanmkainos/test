@@ -127,6 +127,8 @@ const endFetch = caches.match('http://localhost:8002/html/footer.html');
 
 *** NOTE - *** To see the main benefit of the example you should throttle the connection speed using browser developer tools which will showcase the instant first render due to the cached header. In the example below I am using a GPRS connection from within Google Chrome developer tools.
 
+![alt text](gov.gif)
+
 ** StreamJsonListRender **
 
 # FAQ #

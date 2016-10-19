@@ -127,6 +127,7 @@ This demonstration showcases the service workers ability to not only intercept r
 ## ##
 
 ** KeyWordSearchUseCase **
+
 One of the key benefits of streaming is the ability to download a resource in chunks, each chunk can the be processed as it arrives versus downloading the entire resource first. Consider a scenario where the goal is to determine if a keyword is present within a (10 megabyte) text file hosted on the server, if that keyword is found early (say 1mb downloaded) then the stream which is handling the download can close. This has huge performance implications by saving the user time (not waiting for the whole file) and memory to store the file, in addition to this as each chunk search is complete it can be be stored or discarded.
 
 *** Note - ***This example is setup to search the HTML spec for the keyword 'service worker', as it searches the html is rendered to the screen until the keyword is discovered. In addition to this if you open the dev tools console you can see output showing the accumulation of bytes being downloaded as the search continues.

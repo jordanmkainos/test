@@ -130,6 +130,19 @@ const endFetch = caches.match('http://localhost:8002/html/footer.html');
 ![alt text](gov.gif)
 
 ** StreamJsonListRender **
+In web applications a typical use case involves the rendering of lists of data to the user, this typically involves downloading the entire file holding the data (XML/JSON etc) and then using Javascript to handle the HTML manipulation. However using streams we can download, process and render the data as the service worker receives it using streams. This involves adjusting the structure of the JSON from the server so that each element can be parsed independently, see the example below:
+
+
+```
+#!json
+
+{"id":1,"first_name":"Judy","last_name":"Fowler","email":"jfowler0@histats.com"}
+{"id":2,"first_name":"Ralph","last_name":"Wright","email":"rwright1@examiner.com"}
+{"id":3,"first_name":"Thomas","last_name":"Simpson","email":"tsimpson2@paginegialle.it"}
+{"id":4,"first_name":"Bruce","last_name":"Cox","email":"bcox3@wikispaces.com"}
+{"id":5,"first_name":"Carol","last_name":"Simmons","email":"csimmons4@trellian.com"}
+```
+
 
 # FAQ #
 ---

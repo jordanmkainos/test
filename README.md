@@ -93,6 +93,12 @@ While running each of these demos locally, the service worker will bind itself t
 * Run each demo on a different port number
 * Unregister the old service worker when you are finished with it (which allows installation of a new service worker) - a gif has been included showing the process of unregistering a service worker (in chrome developer tools)
 
+## ##
+
+![alt text](unregister.gif)
+
+## ##
+
 
 # Use cases #
 ---

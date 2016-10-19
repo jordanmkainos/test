@@ -110,6 +110,7 @@ One of the key benefits of streaming is the ability to download a resource in ch
 ![alt text](search.gif)
 
 ** StreamHeaderFooter **
+
 Typically on content driven websites there will be elements of the page that are consistently displayed through the users stay on the site, these are normally encapsulated in a header and footer. When the html is rendered from the server that means the header/footer is downloaded fresh each time, this does not make sense in terms of performance due to the impact on load time. However using streams we can cache the header and footer and then each time the user navigates to a new page form a unified stream of the header -> network body content -> and the footer. This will yield and almost instant first render and reduce the overall load time of each webpage on the site, over the course of a users visit this could prove valuable especially on slower connections.
 
 
@@ -124,7 +125,7 @@ const contentFetch = fetch("html/content.html").catch(() => new Response("Failed
 const endFetch = caches.match('http://localhost:8002/html/footer.html');
 ```
 
-*** NOTE - *** To see the main benefit of the example you should throttle the connection speed using browser developer tools which will showcase the instant first render due to the cached header. 
+*** NOTE - *** To see the main benefit of the example you should throttle the connection speed using browser developer tools which will showcase the instant first render due to the cached header. In the example below I am using a GPRS connection from within Google Chrome developer tools.
 
 ** StreamJsonListRender **
 
@@ -144,7 +145,7 @@ const endFetch = caches.match('http://localhost:8002/html/footer.html');
 
 **Q:** What if I want to run the examples on the same port and I already have a old service worker installed?
 
-**A:** talk about deleting sw and refreshing
+**A:** Good question! talk about deleting sw and refreshing
 
 # Examples Built With #
 ---

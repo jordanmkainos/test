@@ -154,7 +154,7 @@ One of the key benefits of streaming is the ability to download a resource in ch
 Typically on content driven websites there will be elements of the page that are consistently displayed through the users stay on the site, these are normally encapsulated in a header and footer. When the html is rendered from the server that means the header/footer is downloaded fresh each time, this does not make sense in terms of performance due to the impact on load time. However using streams we can cache the header and footer and then each time the user navigates to a new page form a unified stream of the header -> network body content -> and the footer. This will yield and almost instant first render and reduce the overall load time of each webpage on the site, over the course of a users visit this could prove valuable especially on slower connections.
 
 
-*** Note - ***This example should be hosted on port '8001' as the location of the cached assets need to be specified explicitly within the service worker. Alternatively you can edit the service worker code directly to utilise a port number of your own choosing, in the example code below it is as simple as modifying the url string.
+*** Note - ***This example should be hosted on port '8002' as the location of the cached assets need to be specified explicitly within the service worker. Alternatively you can edit the service worker code directly to utilise a port number of your own choosing, in the example code below it is as simple as modifying the url string.
 
 ## ##
 
@@ -193,7 +193,7 @@ In web applications a typical use case involves the rendering of lists of data t
 
 ## ##
 
-***Note - ***You should know the drill by now, when you run the demo a splash page should appear (to allow the service worker to install) and clicking on the button should showcase the list streaming. To fully appreciate the impact of streaming a throttled connection should be used from with the browser developer tools. You will see the browser rendering the JSON as it receives it, the power of this functionality will be most evident when larger JSON files are being downloaded, this is a blocker streaming lets us bypass!
+***Note - ***You should know the drill by now, when you run the demo a splash page should appear (to allow the service worker to install) and clicking on the button should showcase the list streaming. To fully appreciate the impact of streaming a throttled connection should be used from with the browser developer tools. You will see the browser rendering the JSON as it receives it, the power of this functionality will be most evident when larger JSON files are being downloaded, this is a blocker streaming lets us bypass! (Run on port 8001)
 
 ## ##
 

@@ -143,6 +143,9 @@ In web applications a typical use case involves the rendering of lists of data t
 {"id":5,"first_name":"Carol","last_name":"Simmons","email":"csimmons4@trellian.com"}
 ```
 
+***NOTE - ***You should know the drill by now, when you run the demo a splash page should appear (to allow the service worker to install) and clicking on the button should showcase the list streaming. To fully appreciate the impact of streaming a throttled connection should be used from with the browser developer tools. You will see the browser rendering the JSON as it receives it, the power of this functionality will be most evident when larger JSON files are being downloaded, this is a blocker streaming lets us bypass!
+
+![alt text](list.gif)
 
 # FAQ #
 ---
